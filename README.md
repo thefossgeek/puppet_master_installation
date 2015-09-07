@@ -21,8 +21,19 @@ $cd /<your_path>/puppet_master_installation
 5). Modify the install.conf file. You have to edit puppet master ip address, hostname and aliases.
 
 $vim install.conf 
+
 puppet_master_ip=10.209.224.129 
+
 canonical_hostname=puppetmastersg.sgosbc.com
+o
 aliases=puppetmastersg
 
-6).
+6).If you have your hiera.yaml and hieradata then copy both into puppet_master_installation.
+
+Run the script to trigger installation 
+
+$ ./trigger_puppet_master_installation.sh
+
+The above script will automatically do Puppet Master Installation and Configuration.
+
+
